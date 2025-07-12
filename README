@@ -1,0 +1,19 @@
+# README – Malaria Epidemic Simulation (MPI + Gillespie SSA)
+
+This project simulates a malaria epidemic using the Gillespie Stochastic Simulation Algorithm (SSA), parallelized using MPI for performance.
+
+##  Files Included
+- `Makefile` – for building the program.
+- `malaria_sim.c` – main source code for the SSA simulation.
+- `strong.sh` – a shell script for strong scalability 
+- `weak.sh` – a shell script for and weak scalability
+
+### To compile
+make
+
+#### Run it:
+mpirun -np <p> ./malaria_sim <N>
+
+##### Performance:
+sbatch strong.sh
+sbatch weak.sh
